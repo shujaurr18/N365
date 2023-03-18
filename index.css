@@ -1,0 +1,269 @@
+/* Reset the margin and padding on all elements */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: N26, sans-serif;
+
+}
+ul{
+  list-style: none;
+}
+h2{
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 550;
+
+}
+p{
+  font-size: 16px;
+  margin-bottom: 16px;
+
+}
+.fs-12{
+font-size: 12.9px;
+}
+.fs-18{
+  font-size: 18px;
+  margin: 0px 0px 29px;
+  }
+.fs-16{
+  font-size: 16px;
+}
+label{
+  color: gray;
+}
+input::placeholder {
+  /* color: Red !important; */
+}
+
+.whiteCard{
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #efefef;
+}
+.bt-0{
+  border-top: none;
+}
+.grayBtn{
+  background-color: #efefef;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 5px 10px;
+
+}
+.position-relative{
+  position: relative;
+}
+
+.PrimaryInput{
+ height: 68px !important; 
+}
+.fw-600{
+  font-weight: 600;
+  color: #121212;
+}.error {
+  color: red;
+}
+
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #1A6A60 !important;
+  outline: 0;
+  border: 2px solid;
+  box-shadow: 0 0 0 0.25rem #fff!important;
+}
+.form-select:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #1A6A60 !important;
+  outline: 0;
+  border: 2px solid;
+  box-shadow: 0 0 0 0.25rem #fff!important; 
+}
+#password-input{
+  border-right: none;
+  
+}
+.input-group-text {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #ffff;
+  border: none;
+  border-right: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+  border-top: 1px solid #ced4da;
+
+  
+  border-radius: 0.375rem;
+}
+.icons44{
+  height: 44px;
+  width: 44px;
+}
+.d-flex{
+  display: flex;
+}
+.borderCustom::after{
+  content: '';
+  position: absolute;
+  margin: 0 20px;
+  top: 20px;
+  height: 3px;
+  background-color: #e9e9e9e9;
+width: 50px;  
+
+}
+.btnGreen{
+  color: #fff;
+  font-size: 16px;
+  background-color: #1A6A60;
+  margin-bottom: 14.08px;
+  padding: 17.2px 26.4px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+transition: all 0.5s;
+}
+.width_198{
+  width: 198px;
+width: 198px;
+}
+.bi {
+  font-weight: 900 !important;
+}
+.bi-arrow-left {
+  font-weight: 900 !important;
+}
+.bi-arrow-left::before {
+  content: "\f12f";
+  font-weight: 900 !important;
+}
+.pac-item:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.btnWhite{
+  color: #1A6A60;
+  font-size: 16px;
+  background-color: #ffff;
+  margin-bottom: 14.08px;
+  padding: 17.2px 26.4px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+transition: all 0.5s;
+}
+.btnGreen:hover{
+  background-color: #1A6A60;
+
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: var(--bs-btn-active-color);
+  background-color: #1A6A60;
+  border-color: var(--bs-btn-active-border-color);
+}
+a{
+ color: #1A6A60
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+    font-size: 112.5%;
+    line-height: 1.4;
+    color: var(--typography-default);
+    overflow-x: hidden;
+    text-underline-position: under;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.signupContainer{
+  padding-left: 6.5rem;
+}
+.align_Center{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.flex-direction-column{
+  flex-direction: column;
+}
+.sidebar {
+  background-color: #fff;
+  border-right: 1px solid #efefef;
+  height: 100vh;
+  /* position: fixed; */
+  padding: 30px 0;
+  
+  
+    
+}
+.scrollable {
+  height: 100vh;
+  overflow-y: scroll; /* add vertical scrollbar */
+}
+
+
+
+
+.content {
+  /* padding: 20px; */
+}
+.sidebarmain{
+  list-style: none;
+  color: rgb(116, 116, 116);
+}
+.sideBarHeader{
+  margin: 0 auto;
+  /* padding-left: 12rem; */
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+}
+.sidebarFooter{
+  list-style: none;
+  color: rgb(116, 116, 116);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+.sidebarFooter a{
+  color: rgb(116, 116, 116);
+  text-decoration: none;
+
+}
+.sidebarFooter a:hover {
+  color: rgba(116, 116, 116, 0.693);
+  cursor: pointer;
+}
+.text-underline{
+  text-decoration: underline;
+}
+
+.sidebarmain li{
+  font-size: 16px;
+  /* height: 50px; */
+  margin: 0px 0px 27.4px;
+}
+/* input{
+  height: 65px !important;
+} */

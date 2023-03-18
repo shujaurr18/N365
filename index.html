@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    integrity="sha512-pGeYlJtKQ2P3c4P9vzoJ8+tZ5L5R5es0S1Msywwuzp0evDj/Z/C62fjFIV59ZB8CZ6Lx0bapj+LInzVQjYwWUg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyDoz4luqgufaKLl2AaQwvpb6XVbQyhAP4w "></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 sidebar ">
+        <!-- Sidebar content -->
+        <div class="d-flex h-100 align-items-center flex-direction-column justify-content-between ">
+<div class="sideBarHeader">
+  <img src="https://finance.n365.io/assets/images/logoIcon/logo.png" alt="Awesome Logo" style="max-height:40px;">
+ 
+</div>
+<div class="sidebarmain">
+<li>personal Information</li>
+<li>Home Address</li>
+
+<li>Additional Information</li>
+
+<li>Tax Information</li>
+
+<li>Create Password</li>
+<li>Create Account</li>
+
+
+</div>
+<div class="sidebarFooter text-center">
+  <a class="fs-12">Update cookie settings</a>
+
+<a class="fs-12" href="https://docs.N365.com/legal/06+EU/03+Privacy%20Policy/en/01privacy-policy-en.pdf?ch=homepage3&lang=en">Privacy Policy
+  <i class="bi bi-arrow-up-right"></i>
+
+</a>
+
+<a class="fs-12" href="https://docs.N365.com/legal/06+EU/03+Privacy+Policy/en/02cookie-policy-en.pdf?ch=homepage3&lang=en">Cookie Policy
+  <i class="bi bi-arrow-up-right"></i>
+
+</a>
+<a class="fs-12" href="https://N365.com/en-eu/imprint">Imprint <i class="bi bi-arrow-up-right"></i></a>
+<a class="fs-12"> <i class="bi bi-c-circle"></i> N365 AG 2 </a>
+<br>
+<br>
+
+<a class="fs-12"><i class="bi bi-moon"></i> Dark mode</a>
+
+</div>
+        </div>
+      </div>
+      <div class="col-md-10 ">
+        <div class="scroolingdiv">
+          <div class="signupContainer ">
+            <div class="align_Center">
+              <div class="step step-1">
+                <div class="col-md-6">
+      
+                  <h2>Start loving your bank</h2>
+      
+                  <p class="mb-3">Open your N365 account in 8 minutes.</p>
+      
+                  <ul class="d-flex px-0">
+                    <li
+                      class="text-center"
+                    >
+                    <div class="d-flex position-relative">
+      <span
+      class="borderCustom mx-5"
+      >
+      <img class="icons44" src="./images/app icon N365.png" alt="">
+      
+      </span>
+                  
+                    </div>    
+                        
+                        
+                          <p class="fw-600 mt-3">
+      
+                            Confirm your <br> email address
+                          </p>
+      
+                    </li>
+                    
+                    <li
+                      class="text-center " 
+                    >
+                    <div class="d-flex position-relative">
+                    
+                      <span  class="borderCustom mx-5"
+                        >
+      <img style="width: 44px;height: 44px;" src="./images/mail icon.png" alt="">
+                        
+                        </span>
+                    </div>
+                          <p class="fw-600 mt-3">
+      
+                            Download the <br> app
+                          </p>
+                      
+                    </li>
+                    <li
+                      class="text-center"
+                    >
+                    <div class="d-flex position-relative">
+                      <span title="Verify your identity" class="borderCustom mx-5"
+                        >
+                        
+                        <img class="icons44" src="./images/identity icon.png" alt="">
+                        
+                        
+      </div>
+                          <p class="fw-600 mt-3">
+      
+                            Verify your <br> identity
+                          </p>
+                    </li>
+                    <li
+                      class="text-center"
+                    >
+                    <div class="d-flex position-relative">
+                      <span title="Get your N365 debit card" class=" px-5"
+                        >
+                        
+                        <img class="icons44" src="./images/payment icon.png" alt="">
+                        </span
+                        
+                      >
+                    </div>
+                      <p class="fw-600 mt-3">
+      
+                        Get your N365 <br> debit card
+      
+                      </p>
+                    </li>
+                  </ul>
+                 
+      
+                  <div class="container mt-3 ">
+                    <div class="form-floating">
+                      <input type="text" class="form-control addressInput" id="search_input" placeholder="Country of Residence">
+                      <label for="autocomplete">Country of Residence</label>
+                     
+                    </div>
+                  </div>
+                  
+
+                  <button class="btn btn-primary next-step btnGreen mt-4">
+                    Get started
+                  </button>
+                </div>
+              </div>
+              <div class="step step-2" style="display: none">
+                <div class="col-md-6">
+        <div class="mb-3">
+          <h2>Personal Information</h2>
+<p class="fs-18">To get started, tell us about yourself.</p>
+        </div>
+                  <div class="row">
+                    <div class="col-md-6 ">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="firstName" placeholder=" First Name">
+                        <label for="firstName">First Name</label>
+                      </div>
+      
+      
+                    </div>
+                    <div class="col-md-6 ">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="LastName" placeholder="Last Name">
+                        <label for="LastName">Last Name</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                    <label for="email">Email Address </label>
+                  </div>
+                  <p class="mb-2">Date of Birth</p>
+      
+                  <div class="row">
+                    <div class="col-md-4 ">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="Day" placeholder="Day ">
+                        <label for="Day">Day </label>
+                      </div>
+      
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="form-floating mb-3">
+                        <!-- <label for="Month">Month</label> -->
+                        <select class="form-control" id="Month" name="Month">
+                          <option value="" selected disabled>Select Month</option>
+                          <option value="January">January</option>
+                          <option value="February">February</option>
+                          <option value="March">March</option>
+                          <option value="April">April</option>
+                          <option value="May">May</option>
+                          <option value="June">June</option>
+                          <option value="July">July</option>
+                          <option value="August">August</option>
+                          <option value="September">September</option>
+                          <option value="October">October</option>
+                          <option value="November">November</option>
+                          <option value="December">December</option>
+                        </select>
+                      </div>
+                      
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <div class="form-floating mb-3">
+                        <!-- <label for="Year">Year</label> -->
+                        <select class="form-control" id="Year" name="Year">
+                          <option value="">Select Year</option>
+                          <script>
+                            var currentYear = new Date().getFullYear();
+                            for (var i = currentYear - 18; i >= 1923; i--) {
+                              document.write("<option value='" + i + "'>" + i + "</option>");
+                            }
+                          </script>
+                        </select>
+                      </div>
+                      
+      
+                    </div>
+                  </div>
+      
+                  <!-- <h2>Waiting List
+                    </h2>
+                    <p>
+                      We’re not in your region yet, but you can sign up for our waiting list and we’ll let you know when we’re available there.
+                    </p>
+                    <div class=" mt-4 mb-5">
+                      <div class="form-floating">
+                        <input type="email" class="form-control addressInput " id="email" placeholder="Email Address">
+                        <label for="email
+                        FormControlInput1">Email Address</label>
+                        
+                      </div>
+                    </div>
+                    <p>
+                      Please see our <a href="#"> Privacy Policy</a> for more information on how we will process your personal data and which information we will provide to you via email.
+                    </p> -->
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i>
+      
+                    Back</button>
+                    <button type="button" id="verifyEmailBtn" class="btnGreen next-steps">Continue</button>
+                  <!-- <button class="btnGreen next-steps" >Continue</button> -->
+                </div>
+              </div>
+              <div class="step step-3" style="display: none">
+                <div class="col-md-6">
+                  <h2>Home Address
+                  </h2>
+                  <p>
+                    Your N365 card will be shipped to this address.We can only send cards to residential addresses.
+                  </p>
+                  <!-- <div class=" mt-4 mb-5">
+                    <div class="form-floating">
+                      <input type="address" class="form-control addressInput " id="address" placeholder="address Address">
+                      <label for="address
+                        FormControlInput1">Search for address </label>
+      
+                    </div>
+                  </div> -->
+                  <div class=" mt-3 mb-5">
+                    <div class="form-floating">
+                      <input type="text" class="form-control addressInput" id="searchinput" placeholder="Search for address">
+                      <label for="autocomplete">Search for address</label>
+                      <!-- <input type="text" class="form-control addressInput" id="search_input" placeholder="Country of Residence">
+                      <label for="autocomplete">Country of Residence</label> -->
+                    </div>
+                  </div>
+      
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i>
+      
+                    Back</button>
+                  <button class="btnGreen next-step">Continue</button>
+                </div>
+              </div>
+              <div class="step step-4" style="display: none">
+                <div class="col-md-6">
+            
+                  
+                  
+                  <h2>Confirm Home Address</h2>
+                  </h2>
+                  <p class="fs-18 mb-3">
+                    Please confirm that this information is correct to make sure card reaches you.
+                  </p>
+                  <div class="whiteCard mt-5">
+                    <div class="d-flex justify-content-between align-items-center">
+<div>
+  
+  <p class="fw-bold">
+    michael janssen
+  </p>
+  <button class="grayBtn"><i class="bi bi-plus"></i> Add additional information</button>
+</div>
+<img  style="width: 70px; height:75px;" src="/images/Stamp approved N365 green.png" alt="">
+                    </div>
+                    <p class="mb-0 fs-16 " >Lorem, ipsum.</p>
+                    <p class="mb-0 fs-16">Lorem, ipsum.</p>
+                    <p class="mb-0 fs-16">Lorem</p>
+      
+      
+                  </div>
+                  <div class=" mt-4 mb-5">
+                    <div class="form-floating">
+                      <input type="text" class="form-control AddtionalInformationInput " id="AddtionalInformation" placeholder="Additional Information ">
+                      <label for="AddtionalInformation
+                      FormControlInput1">Additional Information </label>
+                      
+                    </div>
+                    <p class="mt-1">
+                      c/o, apartment no., door code,etc.
+                    </p>
+                  </div>
+              
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Edit Address</button>
+                  <button class="btnGreen next-step">Confirm and Continue</button>
+      </div>
+              </div>
+              <div class="step step-5" style="display: none">
+                <div class="col-md-6">
+            
+                  
+                  
+                  <h2>Additional Information</h2>
+                  </h2>
+                  <p class="fw-bold fs-18">
+                    Please tell us your nationality and place of birth.
+                  </p>
+                  <div class=" mt-4 mb-5">
+                    <div class="form-floating">
+                      <input type="text" class="form-control PrimaryInput " id="nationality" placeholder="Nationality ">
+                      <label for="Nationality
+                      FormControlInput1">Nationality (Country) </label>
+                      
+                    </div>
+                    <p class="mt-2">
+                      As shown on passport
+                    </p>
+                  </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control PrimaryInput " id="cityofBirth" placeholder="City of Birth ">
+                      <label for="cityofBirth
+                      FormControlInput1">City of Birth </label>
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control PrimaryInput " id="CountryofBirth" placeholder="Country of Birth ">
+                      <label for="CountryofBirth
+                      FormControlInput1">Country of Birth </label>
+                      
+                    </div>
+                  </div>
+                </div>
+                <br>
+      <p class="fw-bold mt-2">What is your legal sex?</p>
+      <p class="fs-18">
+      
+        For regulatory reasons you can only select one of thee two options.
+      </p>
+      
+      <div class="form-check whiteCard  mb-0 ">
+        <input class="form-check-input mx-2" type="radio" name="gender" id="femaleRadio" value="female">
+        <label class="form-check-label ms-3" for="femaleRadio">Female</label>
+      </div>
+      
+      <div class="form-check whiteCard bt-0 ">
+        <input class="form-check-input mx-2" type="radio" name="gender" id="maleRadio" value="male">
+        <label class="form-check-label ms-3" for="maleRadio">Male</label>
+      </div>
+      
+              
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-step"> Continue</button>
+      </div>
+              </div>
+      
+              <div class="step step-6" style="display: none">
+                <div class="col-md-6">
+            
+                  
+                  
+                  <h2>Additional Information</h2>
+                  </h2>
+                  <p class="fw-bold fs-18">
+                    What is your main employment status?
+                  </p>
+                  <div class=" mt-4 mb-5">
+                    <div class="form-floating">
+                   
+                      
+                      <select class="form-select" id="employmentStatus" aria-label="Employment Status
+                      ">
+                      <!-- <option disabled selected>Employment Status</option> -->
+                        
+                      <option value="EMPLOYED">Employed (full-time or part-time)</option><option value="SELF_EMPLOYED">Self-employed or freelance</option><option value="STUDENT">Student</option><option value="RETIRED">Retired or homemaker</option><option value="UNEMPLOYED">Unemployed</option>
+                      </select>
+                      <label for="employmentStatus">Employment Status</label>
+                    </div>
+                 
+                  </div>
+                  
+              
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-step"> Continue</button>
+      </div>
+              </div>
+              <div class="step step-7" style="display: none">
+                <div class="col-md-6">
+            
+                  
+                  
+                  <h2>Additional Information</h2>
+                  </h2>
+                  <p class="fw-bold fs-18">
+                    Which industry do you work in?
+                  </p>
+                  <div class=" mt-4 mb-5">
+                    <div class="form-floating">
+                   
+                      
+                      <select class="form-select" id="employmentStatus" aria-label="Industry">
+                        <option value="" disabled selected> Industry</option><option value="AGRICULTURE_AND_FORESTRY">Agriculture &amp; forestry</option><option value="ARTS_JEWELRY_AND_PAWN_SHOPS">Arts, jewelery, and pawn shops</option><option value="BANKING_AND_INSURANCE">Banking &amp; insurance</option><option value="CONSTRUCTION">Construction</option><option value="EDUCATION_AND_SCIENCE">Education &amp; science</option><option value="ENERGY_UTILITIES_AND_TELECOMMUNICATION">Energy, utilities &amp; telecommunication</option><option value="HEALTH_SERVICES_AND_SOCIAL_WELFARE">Health services &amp; social welfare</option><option value="LEGAL_TAX_AUDIT_AND_ACCOUNTING_SERVICES">Legal, tax, audit &amp; accounting services</option><option value="LOGISTICS_WHOLESALE_AND_RETAIL">Logistics, wholesale &amp; retail</option><option value="MANUFACTURING_AND_INDUSTRIAL_PRODUCTION">Manufacturing &amp; industrial production</option><option value="MEDIA_TECHNOLOGY_AND_CONSULTING">Media, technology &amp; consulting</option><option value="PUBLIC_SERVICES_AND_HOSPITALITY">Public services &amp; hospitality</option><option value="SPORT_GAMBLING_ENTERTAINMENT_AND_GASTRONOMY">Sport, gambling, entertainment &amp; gastronomy</option><option value="TRAVEL_AGENCIES_AND_REAL_ESTATE_AGENTS">Travel agencies &amp; real estate agents</option><option value="TRUSTS_AND_CHARITIES">Trusts &amp; charities</option><option value="VEHICLE_TRADE_AND_SERVICES">Vehicle trade &amp; services</option><option value="WEAPONS_PRODUCTION_OR_SALE">Weapon production or sales</option>
+                      </select>
+                      <label for="employmentStatus">Industry</label>
+                    </div>
+                 
+                  </div>
+                  
+              
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-step"> Continue</button>
+      </div>
+              </div>
+              <div class="step step-8" style="display: none">
+                <div class="col-md-6">
+            
+                  
+                  
+                  <h2>Additional Information</h2>
+                  </h2>
+                  <p class="fw-bold fs-18">
+                    What is your main source of income?
+                  </p>
+                  <div class=" mt-4 mb-5">
+                    <div class="form-floating">
+                    
+                      
+                      <select class="form-select" id="employmentStatus" aria-label="source of income">
+                     
+                        <option value="" >Source of income</option><option value="EMPLOYMENT">Employment (e.g. salary, wages, bonuses, or other business activities)</option><option value="GOVERNMENT_PAYMENTS">Government payments (e.g. social security, or government grants)</option><option value="PENSION">Pension </option><option value="GRANTS">Grants (e.g. scholarships or funding)</option><option value="DONATIONS">Donations </option><option value="RENTAL_INCOME">Rental income (e.g. rentals, leasing out a property)</option><option value="FAMILY_INCOME">Family income (e.g. income from family members)</option><option value="CAPITAL_MARKET_INCOME">Capital market income (e.g. capital gains, or dividend payments)</option><option value="ASSET_SALES">Asset sales (e.g. real estate, vehicles, or other assets)</option><option value="INHERITANCE">Inheritance </option><option value="GAMBLING_WINNINGS">Gambling winnings </option>
+                      </select>
+                      <label for="employmentStatus">source of income</label>
+                    </div>
+                 
+                  </div>
+                  
+              
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-step"> Continue</button>
+      </div>
+              </div>
+              <div class="step step-9" style="display: none">
+                <div class="col-md-6">
+            
+                  
+                  
+                  <h2>Additional Information</h2>
+                  </h2>
+                  <p class="fw-bold fs-b-18">
+                    How do you plan to use your N365 account?
+                  </p>
+                  <p class="">
+                    Please select the option that fits best.
+                  </p>
+                  <div class=" mt-4 mb-5">
+                    <div class="form-floating">
+                     
+                      
+                      <select class="form-select" id="employmentStatus" aria-label="Choose an option">
+                        <option disabled="" value="">Choose an option...</option><option value="SALARY_OR_PENSION">To receive salary/pension</option><option value="DAY_TO_DAY_EXPENSES">Day-to-day expenses</option><option value="FREELANCER_ACTIVITY">Freelance work</option><option value="PERSONAL_PROJECTS">Personal projects</option><option value="TRAVEL_OR_RELOCATION">Travel or relocation</option><option value="ONLINE_PURCHASES">Online purchases</option><option value="ONLINE_TRADING_OR_CRYPTOCURRENCY">Online trading and/or cryptocurrency</option>
+                      </select>
+                      <label for="employmentStatus">Choose an option</label>
+                    </div>
+                 
+                  </div>
+                  
+              
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-step"> Continue</button>
+      </div>
+              </div>
+              <div class="step step-10" style="display: none">
+                <div class="col-md-6">
+            
+                  
+                  
+                  <h2>U.S> Citizenship</h2>
+                  </h2>
+                  <p class="fw-bold fs-18">
+                    Are you also a U.S citizen or Gareen Card holder?
+                  </p>
+                  <p class="">
+                    We need to as because of
+<span class="text-underline">  FATCA</span>                    
+  <i class="bi bi-arrow-up-right"></i>.
+
+                  </p>
+                  
+                  <div class="form-check whiteCard d-flex justify-content-between mb-0">
+                    <label class="form-check-label ms-3"style='color: #000;' for="NoRadio">No</label>
+                    <input class="form-check-input" type="radio" name="gender" id="NoRadio" value="No">
+                  </div>
+                  
+                  <div class="form-check whiteCard bt-0 d-flex justify-content-between">
+                    <label class="form-check-label ms-3"style='color: #000;' for="YESRadio" value="yes">YES, I am also a U.S citizen orGareen Card holder</label>
+                    <input class="form-check-input" type="radio" name="gender" id="YESRadio" value="YES">
+                  </div>
+                  
+              
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-stepsss"> Continue</button>
+      </div>
+              </div>
+              
+              <div class="step step-100" style="display: none">
+                <div class="col-md-6">
+            
+                  
+                  
+                  <h2>U.S. Text Information</h2>
+                  </h2>
+                  <p class="fw-bold fs-18">
+                    Are you subjext to tax in the Us?
+                  </p>
+                  <p class="">
+                    Learn more about why are asking for this 
+<span class="text-underline"> information</span>                    
+  <i class="bi bi-arrow-up-right"></i>.
+
+                  </p>
+                  
+                  <div class="form-check whiteCard d-flex justify-content-between mb-0">
+                    <label class="form-check-label ms-3"style='color: #000;' for="NoRadio">No</label>
+                    <input class="form-check-input" type="radio" name="gender" id="NoRadios" value="No">
+                  </div>
+                  
+                  <div class="form-check whiteCard bt-0 d-flex justify-content-between">
+                    <label class="form-check-label ms-3"style='color: #000;' for="YESRadio" value="yes">YES, I am subject to text in the us</label>
+                    <input class="form-check-input" type="radio" name="gender" id="YESRadios" value="YES">
+                  </div>
+                  
+              
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-stepsses"> Continue</button>
+      </div>
+              </div>
+              <div class="step step-11" style="display: none">
+                <div class="col-md-6">      
+                  <h2>Tax Information</h2>
+                  </h2>
+                  <p class="fw-bold fs-18">
+                    What is your Social Security Number or Individual Taxpayer Identification Number?
+                  </p>
+                  <p class="">
+                    We need to as because of
+<span class="text-underline">  FATCA</span>                    
+  <i class="bi bi-arrow-up-right"></i>.
+
+                  </p>
+                  
+                  <div class="form-floating">
+                    <input type="password" class="form-control PrimaryInput " id="SSNorITIN" placeholder="SSN or ITIN  ">
+                    <label for="SSNorITIN
+                    FormControlInput1">SSN or ITIN </label>
+                    
+                  </div>
+                  
+                  <p class="fw-bold fs-18 mt-3">
+                    In which country(s) other than the US are you a tax resident?
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control PrimaryInput " id="countryoftax" placeholder="Country of Tax Liability  ">
+                        <label for="countryoftax
+                        FormControlInput1">Country of Tax Liability </label>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control PrimaryInput " id="taxId" placeholder="Tax ID (required)  ">
+                        <label for="taxId
+                        FormControlInput1">Tax ID (required) </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+      <button class="btnWhite mt-3 mb-3"> Add another</button>
+                  <p class="fw-bold mt-3">
+      
+                    <a href="">More Information</a>
+                    on how to find your tax ID.
+                  </p>
+                  
+                  <p class="">
+      
+                    We need to ask because of <a href="">FATCA  </a>and
+      
+                    <a href="">CRS</a>.Please include all countries in which you are tax resident.
+      We are obligated to report <a href="">certain information about your account </a> to the Federal Tax Office for the purpose of sharing it with the USA (FATCA) and with your country of residence (CRS). 
+                  </p>
+                  
+              
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-step"> Continue</button>
+      </div>
+              </div>
+
+
+
+              <div class="step step-111" style="display: none">
+                <div class="col-md-6">      
+                  <h2>Tax Information</h2>
+                  </h2>
+            
+                  <p class="fw-bold fs-18 mt-3">
+                    In which country(s) other than the US are you a tax resident?
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control PrimaryInput " id="countryoftax" placeholder="Country of Tax Liability  ">
+                        <label for="countryoftax
+                        FormControlInput1">Country of Tax Liability </label>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control PrimaryInput " id="taxId" placeholder="Tax ID (required)  ">
+                        <label for="taxId
+                        FormControlInput1">Tax ID (required) </label>
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+      <button class="btnWhite mt-3 mb-3"> Add another</button>
+                  <p class="fw-bold mt-3">
+      
+                    <a href="">More Information</a>
+                    on how to find your tax ID.
+                  </p>
+                  
+                  <p class="">
+      
+                    We need to ask because of <a href="">FATCA  </a>and
+      
+                    <a href="">CRS</a>.Please include all countries in which you are tax resident.
+      We are obligated to report <a href="">certain information about your account </a> to the Federal Tax Office for the purpose of sharing it with the USA (FATCA) and with your country of residence (CRS). 
+                  </p>
+                  
+              
+                  <br>
+                  <button class=" btnWhite prev-step fw-bold">
+                    <i class="bi bi-arrow-left fw-bold"></i> 
+                    
+                    Back</button>
+                  <button class="btnGreen next-step"> Continue</button>
+      </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="step step-12" style="display: none">
+                <div class="col-md-6">      
+                  <h2>Create Password</h2>
+                  </h2>
+                
+                
+                  <div class="form-floating">
+                    <div class="input-group mb-3">
+                        <input type="password" id="password-input" class="form-control PrimaryInput" aria-label="Password" aria-describedby="basic-addon1" placeholder="Password">
+                        <i toggle="#password-input" id="basic-addon1" class="bi bi-eye input-group-text eye-icon toggle-password" onclick="togglePasswordVisibility()"></i>
+                    </div>  
+                </div>
+                <div class="password-strength">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar"></div>
+                    </div>
+                    <ul class="password-warnings">
+                        <li>                Password should be long,
+                        </li>
+                        <li> unique to you, and difficult for others to guess.</li>
+      
+                        
+                    </ul>
+                    
+                </div>
+                
+      <div class="whiteCard mt-3 pt-1 pb-1">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <p class="fw-bold mb-0">Have a code?
+          
+            </p>
+            <p class="text-muted mb-0">
+          Promotional or invite code 
+            </p>
+      
+          </div>
+          <button class="btnWhite">
+      
+            Redeem
+          </button>
+        </div>
+      </div>
+      <br>
+      <br>
+      
+                <button class=" btnWhite prev-step fw-bold">
+                  <i class="bi bi-arrow-left fw-bold"></i> 
+                  
+                  Back</button>
+                <button class="btnGreen next-step"> Continue</button>
+                </div>
+                  
+                  
+                  
+              
+      </div>
+      <div class="step step-13 " style="display: none">
+        <div class="row">
+          <div class="col-md-6">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2>Create Account</h2>
+            <p>
+              To create your N365 account,please agree to the terms and conditions.
+            </p>
+            <div class="form-check  mb-3">
+              <input class="form-check-input" type="radio" name="gender" id="femaleRadio" value="female">
+              <label class="form-check-label ms-3 fw-bold" for="femaleRadio">Terms and Conditions</label>
+            </div>
+            <p class="fs-16 text-muted">I hereby open an N365 current account and enter into an app licensing agreement according to the following legal documents which I have read and to which I consent: Pre-contractual Information, N365 Terms and Conditions, Deposit Protection and Pricelist. I confirm that I act on my own behalf.</p>
+      
+            <div class="form-check  mb-3">
+              <input class="form-check-input" type="radio" name="gender" id="findme" value="findme">
+              <label class="form-check-label ms-3 fw-bold" for="findme">Let friends find me. <span class="text-muted"> Recommended</span></label>
+            </div>
+            <p class="fs-16 text-muted">I want to receive or request money more easily by letting friends find me on N365. I agree to let other N365 customers look me up using my phone number or email. After they find me, they’ll see that I’m also an N365 customer. I can change this setting at any time from the My Account section.</p>
+            <div class="form-check  mb-3">
+              <input class="form-check-input" type="radio" name="ProductUpdates" id="ProductUpdates" value="ProductUpdates">
+              <label class="form-check-label ms-3 fw-bold" for="ProductUpdates">Product Updates <span class="text-muted"> optional</span></label>
+            </div>
+            <p class="fs-16 text-muted">I would like to receive occasional N365 product reminders and updates via email and push notifications. This consent is revocable at any time.</p>
+            <div class="form-check  mb-3">
+              <input class="form-check-input" type="radio" name="Marketing Partners" id="MarketingPartners" value="Marketing Partners">
+              <label class="form-check-label ms-3 fw-bold" for="MarketingPartners">Marketing Partners <span class="text-muted"> optional</span></label>
+            </div>
+            <p class="fs-16 text-muted">I hereby agree that N365 can send my email address to our Marketing Partners (Google Ireland Limited & Meta Platforms Ireland Ltd) to create custom and lookalike audiences and deliver personalized content on services offered by our Marketing Partners. Google and Facebook transfer data to Google LLC and Meta Platforms Ireland Ltd located in the USA. The USA is a country that - in the terms of EU Regulation 2016/679 (‘GDPR’) - does not provide an adequate level of protection of personal data. This consent is revocable at any time. <a href=""> Learn more about the data processing in connection with our Marketing Partners.</a></p>
+          
+          
+            <button class=" btnWhite prev-step fw-bold mt-3">
+              <i class="bi bi-arrow-left fw-bold"></i> 
+              
+              Back</button>
+            <button class="btnGreen next-step"> Create my N365 Account</button>
+            <br>
+            <p>
+              Information on data processing operations can be found in the N365 Privacy Policy. Information on Cookies and similar technologies can be found in the Cookie Policy for N365 apps.
+            </p>
+            <br>
+            <br>
+
+          </div>
+       
+        </div>
+      
+      
+      </div>
+      
+      <div class="step step-14 " style="display: none">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Almost Done</h2>
+            <p>
+              Please follow the link we’ve sent to <strong> your email</strong> to verify your email address. Check your spam folder if you don't see it.  
+            </p>
+            <br>
+            <button class="btnGreen">Resend Email</button>
+          </div>
+          <div class="col-md-6">
+           
+            <div class="width_198 m-auto">
+      
+            <svg
+            
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="192" height="192" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;"><defs><clipPath id="__lottie_element_2"><rect width="192" height="192" x="0" y="0"></rect></clipPath><linearGradient id="__lottie_element_7" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-44.29100036621094" y1="-13.138999938964844" x2="-2.3010001182556152" y2="22.295000076293945"><stop offset="0%" stop-color="rgb(237,237,237)"></stop><stop offset="50%" stop-color="rgb(235,235,235)"></stop><stop offset="100%" stop-color="rgb(232,232,232)"></stop></linearGradient><linearGradient id="__lottie_element_8" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="40.3380012512207" y1="-13.260000228881836" x2="-0.7540000081062317" y2="23.52899932861328"><stop offset="0%" stop-color="rgb(237,237,237)"></stop><stop offset="50%" stop-color="rgb(235,235,235)"></stop><stop offset="100%" stop-color="rgb(232,232,232)"></stop></linearGradient><linearGradient id="__lottie_element_9" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-1.409999966621399" y1="37.78900146484375" x2="-1.6039999723434448" y2="53.09199905395508"><stop offset="0%" stop-color="rgb(245,245,245)"></stop><stop offset="50%" stop-color="rgb(243,243,243)"></stop><stop offset="100%" stop-color="rgb(240,240,240)"></stop></linearGradient><g id="__lottie_element_14"><g clip-path="url(#__lottie_element_15)" transform="matrix(1.399999976158142,0,0,1.399999976158142,6.400001525878906,6.400001525878906)" opacity="1" style="display: block;"><rect width="128" height="128" fill="#000000"></rect></g></g><clipPath id="__lottie_element_15"><path fill="#ffffff" clip-rule="nonzero" d=" M105.02100372314453,19 C105.02100372314453,19 17.5,19 17.5,19 C17.5,19 17.5,108.38300323486328 17.5,108.38300323486328 C17.5,108.38300323486328 105.02100372314453,108.38300323486328 105.02100372314453,108.38300323486328 C105.02100372314453,108.38300323486328 105.02100372314453,19 105.02100372314453,19" fill-opacity="1"></path></clipPath><linearGradient id="__lottie_element_22" spreadMethod="pad" gradientUnits="userSpaceOnUse" x1="-0.9860000014305115" y1="-52.242000579833984" x2="-1.3550000190734863" y2="-5.709000110626221"><stop offset="0%" stop-color="rgb(237,237,237)"></stop><stop offset="50%" stop-color="rgb(230,230,230)"></stop><stop offset="100%" stop-color="rgb(223,223,223)"></stop></linearGradient><mask id="__lottie_element_14_1" mask-type="alpha"><use xlink:href="#__lottie_element_14"></use></mask></defs><g clip-path="url(#__lottie_element_2)"><g transform="matrix(1.399999976158142,0,0,1.399999976158142,6.400001525878906,6.400001525878906)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,64,64)"><path fill="url(#__lottie_element_22)" fill-opacity="1" d=" M-4.5920000076293945,-52.340999603271484 C-4.5920000076293945,-52.340999603271484 -50,-13.704999923706055 -50,-13.704999923706055 C-50,-13.704999923706055 -50,15.175000190734863 -50,15.175000190734863 C-50,15.175000190734863 46,15.175000190734863 46,15.175000190734863 C46,15.175000190734863 46,-13.704999923706055 46,-13.704999923706055 C46,-13.704999923706055 0.5920000076293945,-52.340999603271484 0.5920000076293945,-52.340999603271484 C-0.1550000011920929,-52.97700119018555 -1.0770000219345093,-53.29499816894531 -2,-53.29499816894531 C-2.921999931335449,-53.29499816894531 -3.8450000286102295,-52.97700119018555 -4.5920000076293945,-52.340999603271484z"></path></g></g><g mask="url(#__lottie_element_14_1)" style="display: block;"><g transform="matrix(1.399999976158142,0,0,1.399999976158142,6.400001525878906,12.000001907348633)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,64,64)"><path fill="rgb(54,160,138)" fill-opacity="1" d=" M-38,-40.20500183105469 C-39.104000091552734,-40.20500183105469 -40,-39.308998107910156 -40,-38.20500183105469 C-40,-38.20500183105469 -40,21.79400062561035 -40,21.79400062561035 C-40,22.899999618530273 -39.104000091552734,23.795000076293945 -38,23.795000076293945 C-38,23.795000076293945 34,23.795000076293945 34,23.795000076293945 C35.104000091552734,23.795000076293945 36,22.899999618530273 36,21.79400062561035 C36,21.79400062561035 36,-38.20500183105469 36,-38.20500183105469 C36,-39.308998107910156 35.104000091552734,-40.20500183105469 34,-40.20500183105469 C34,-40.20500183105469 -38,-40.20500183105469 -38,-40.20500183105469z"></path></g></g></g><g transform="matrix(1.6257359981536865,0,0,1.6257359981536865,-9.797101020812988,3.70475172996521)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,64,64)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" stroke-dasharray=" 24" stroke-dashoffset="0" stroke="rgb(255,255,255)" stroke-opacity="1" stroke-width="2" d=" M-9.251999855041504,-18.68000030517578 C-9.251999855041504,-18.68000030517578 -3.881999969482422,-14.204999923706055 -3.881999969482422,-14.204999923706055 C-3.881999969482422,-14.204999923706055 7.752999782562256,-25.84000015258789 7.752999782562256,-25.84000015258789"></path></g></g><g transform="matrix(1.399999976158142,0,0,1.399999976158142,6.400001525878906,6.400001525878906)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,64,64)"><path fill="url(#__lottie_element_7)" fill-opacity="1" d=" M-50,-13.704999923706055 C-50,-13.704999923706055 -50,45.29499816894531 -50,45.29499816894531 C-50,45.29499816894531 -2,45.29499816894531 -2,45.29499816894531 C-2,45.29499816894531 -2,22.118000030517578 -2,22.118000030517578 C-2,22.118000030517578 -43.987998962402344,-13.704999923706055 -43.987998962402344,-13.704999923706055 C-43.987998962402344,-13.704999923706055 -50,-13.704999923706055 -50,-13.704999923706055z"></path></g><g opacity="1" transform="matrix(1,0,0,1,64,64)"><path fill="url(#__lottie_element_8)" fill-opacity="1" d=" M39.9900016784668,-13.704999923706055 C39.9900016784668,-13.704999923706055 -2,22.118000030517578 -2,22.118000030517578 C-2,22.118000030517578 -2,45.29499816894531 -2,45.29499816894531 C-2,45.29499816894531 46,45.29499816894531 46,45.29499816894531 C46,45.29499816894531 46,-13.704999923706055 46,-13.704999923706055 C46,-13.704999923706055 39.9900016784668,-13.704999923706055 39.9900016784668,-13.704999923706055z"></path></g><g opacity="1" transform="matrix(1,0,0,1,64,64)"><path fill="url(#__lottie_element_9)" fill-opacity="1" d=" M-4.2820000648498535,8.166999816894531 C-4.2820000648498535,8.166999816894531 -48.28200149536133,38.73500061035156 -48.28200149536133,38.73500061035156 C-49.35900115966797,39.481998443603516 -50,40.709999084472656 -50,42.02000045776367 C-50,42.02000045776367 -50,49.29499816894531 -50,49.29499816894531 C-50,51.50299835205078 -48.20899963378906,53.29399871826172 -46,53.29399871826172 C-46,53.29399871826172 42,53.29399871826172 42,53.29399871826172 C44.20899963378906,53.29399871826172 46,51.50299835205078 46,49.29499816894531 C46,49.29499816894531 46,42.02000045776367 46,42.02000045776367 C46,40.709999084472656 45.358001708984375,39.481998443603516 44.28300094604492,38.73500061035156 C44.28300094604492,38.73500061035156 0.28299999237060547,8.166999816894531 0.28299999237060547,8.166999816894531 C-0.40299999713897705,7.690000057220459 -1.2020000219345093,7.451000213623047 -2,7.451000213623047 C-2.7980000972747803,7.451000213623047 -3.5959999561309814,7.690000057220459 -4.2820000648498535,8.166999816894531z"></path></g></g></g></svg>
+          </div>
+          </div>
+        </div>
+      
+      
+      </div>
+              </div>
+      
+           
+      
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  
+  <script src="./index.js">
+ 
+
+  </script>
+  
+  <!-- Bootstrap Bundle with Popper.js -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-ll+/wsJNPYaTTpY/XwAdDkTR+LUVe9XlJphZmyNJPDJbVlt45x+4tM72YysJwNx/2k3t4c9fDvZJW5H5R5ilNw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
